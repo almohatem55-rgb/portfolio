@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التطبيقات - Syrian Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .apps-table, .apps-table th, .apps-table td {
+            border: 1px solid black !important;
+            border-collapse: collapse !important;
+        }
+        
+        .apps-table th, .apps-table td {
+            padding: 10px !important;
+            text-align: right !important;
+        }
+        
+        .apps-table th {
+            background: #34495e !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Syrian Intelligence</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="home.html" class="nav-link">الرئيسية</a></li>
+                    <li><a href="AboutUs.html" class="nav-link">من نحن</a></li>
+                    <li><a href="apps.html" class="nav-link">التطبيقات</a></li>
+                    <li><a href="add_app.html" class="nav-link">إضافة تطبيق</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="main-content">
+        <section class="apps-section">
+            <h1 class="section-title">تطبيقات الذكاء الاصطناعي</h1>
+            <p class="section-subtitle">استكشف أحدث تطبيقات الذكاء الاصطناعي في مختلف المجالات</p>
+            
+            <!-- جدول التطبيقات -->
+            <div class="table-container">
+                <table class="apps-table">
+                    <thead>
+                        <tr>
+                            <th>اسم التطبيق</th>
+                            <th>اسم الشركة المطورة</th>
+                            <th>مجال الاستخدام</th>
+                            <th>مجاني/غير مجاني</th>
+                            <th>إظهار التفاصيل</th>
+                        </tr>
+                    </thead>
+                    <tbody>             
+<tr>
+
+  <!-- ChatGPT تطبيق   -->
+
+    <td>ChatGPT</td>
+    <td>OpenAI</td>
+    <td>Education</td>
+    <td>مجاني/مميز</td>
+    <td>
+        <input type="checkbox" class="details-checkbox" data-app="1">
+    </td>
+</tr>
+<!-- ChatGPT تفاصيل تطبيق   -->
+<tr class="app-details" id="details-1" style="display: none;">
+    <td colspan="5">
+        <div class="details-content">
+            <div class="detail-header">
+                <img src="images/chatgpt-logo.png" alt="ChatGPT Logo" class="app-logo">
+                <div class="app-info">
+                    <div class="detail-item">
+                        <strong>اسم التطبيق:</strong> ChatGPT
+                    </div>
+                    <div class="detail-item">
+                        <strong>الموقع الإلكتروني:</strong> <a href="https://chat.openai.com" target="_blank">https://chat.openai.com</a>
+                    </div>
+                    <div class="detail-item">
+                        <strong>شرح مختصر:</strong> مساعد ذكي للدردشة والإجابة على الأسئلة بمختلف المجالات
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<!--  Midjourneyتطبيق  -->
+<tr>
+    <td>Midjourney</td>
+    <td>Midjourney, Inc.</td>
+    <td>Design</td>
+    <td>غير مجاني</td>
+    <td>
+        <input type="checkbox" class="details-checkbox" data-app="2">
+    </td>
+</tr>
+<!-- Midjourney تفاصيل التطبيق  -->
+<tr class="app-details" id="details-2" style="display: none;">
+    <td colspan="5">
+        <div class="details-content">
+            <div class="detail-header">
+                <img src="images/midjourney-logo.png" alt="Midjourney Logo" class="app-logo">
+                <div class="app-info">
+                    <div class="detail-item">
+                        <strong>اسم التطبيق:</strong> Midjourney
+                    </div>
+                    <div class="detail-item">
+                        <strong>الموقع الإلكتروني:</strong> <a href="https://www.midjourney.com" target="_blank">https://www.midjourney.com</a>
+                    </div>
+                    <div class="detail-item">
+                        <strong>شرح مختصر:</strong> توليد صور فنية باستخدام الذكاء الاصطناعي
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<!-- GitHub Copilot تطبيق  -->
+<tr>
+    <td>GitHub Copilot</td>
+    <td>GitHub</td>
+    <td>Programming</td>
+    <td>غير مجاني</td>
+    <td>
+        <input type="checkbox" class="details-checkbox" data-app="3">
+    </td>
+</tr>
+<!--GitHub Copilot تفاصيل التطبيق  -->
+<tr class="app-details" id="details-3" style="display: none;">
+    <td colspan="5">
+        <div class="details-content">
+            <div class="detail-header">
+                <img src="images/copilot-logo.png" alt="GitHub Copilot Logo" class="app-logo">
+                <div class="app-info">
+                    <div class="detail-item">
+                        <strong>اسم التطبيق:</strong> GitHub Copilot
+                    </div>
+                    <div class="detail-item">
+                        <strong>الموقع الإلكتروني:</strong> <a href="https://github.com/features/copilot" target="_blank">https://github.com/features/copilot</a>
+                    </div>
+                    <div class="detail-item">
+                        <strong>شرح مختصر:</strong> مساعد مبرمج يعمل بالذكاء الاصطناعي
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<!-- Grammarly تطبيق  -->
+<tr>
+    <td>Grammarly</td>
+    <td>Grammarly, Inc.</td>
+    <td>Writing</td>
+    <td>مجاني/مميز</td>
+    <td>
+        <input type="checkbox" class="details-checkbox" data-app="4">
+    </td>
+</tr>
+<!-- Grammarly تفاصيل التطبيق  -->
+<tr class="app-details" id="details-4" style="display: none;">
+    <td colspan="5">
+        <div class="details-content">
+            <div class="detail-header">
+                <img src="images/grammarly-logo.png" alt="Grammarly Logo" class="app-logo">
+                <div class="app-info">
+                    <div class="detail-item">
+                        <strong>اسم التطبيق:</strong> Grammarly
+                    </div>
+                    <div class="detail-item">
+                        <strong>الموقع الإلكتروني:</strong> <a href="https://www.grammarly.com" target="_blank">https://www.grammarly.com</a>
+                    </div>
+                    <div class="detail-item">
+                        <strong>شرح مختصر:</strong> مساعد كتابة وتحسين النصوص
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+<!-- DALL-E تطبيق  -->
+<tr>
+    <td>DALL-E</td>
+    <td>OpenAI</td>
+    <td>Design</td>
+    <td>غير مجاني</td>
+    <td>
+        <input type="checkbox" class="details-checkbox" data-app="5">
+    </td>
+</tr>
+<!-- DALL-E تفاصيل التطبيق  -->
+<tr class="app-details" id="details-5" style="display: none;">
+    <td colspan="5">
+        <div class="details-content">
+            <div class="detail-header">
+                <img src="images/dalle-logo.png" alt="DALL-E Logo" class="app-logo">
+                <div class="app-info">
+                    <div class="detail-item">
+                        <strong>اسم التطبيق:</strong> DALL-E
+                    </div>
+                    <div class="detail-item">
+                        <strong>الموقع الإلكتروني:</strong> <a href="https://openai.com/dall-e" target="_blank">https://openai.com/dall-e</a>
+                    </div>
+                    <div class="detail-item">
+                        <strong>شرح مختصر:</strong> توليد الصور من الوصف النصي
+                    </div>
+                </div>
+            </div>
+        </div>
+    </td>
+</tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- التذييل -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2025 Syrian Intelligence. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</body>
+</html>
